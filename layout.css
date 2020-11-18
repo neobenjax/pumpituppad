@@ -1,0 +1,75 @@
+.fight-stick .arrows {
+    display: none;
+}
+
+.controller.fight-stick {
+    background: url(https://raw.githubusercontent.com/neobenjax/pumpituppad/main/clean.jpg) center no-repeat;
+    height: 600px;
+    width: 600px;
+}
+
+.fight-stick .fstick {
+    display: none;
+}
+
+.fight-stick .quadrant {
+    display: none;
+}
+
+.fight-stick .y {
+    right: auto;
+    top: 70px;
+    left: 50px;
+    background: red;
+}
+
+.fight-stick .abxy {
+    width: 600px;
+    height: 600px;
+    top: 0;
+    left: 0;
+}
+
+.fight-stick .a {
+    top: 70px;
+    right: 50px;
+    left: auto;
+    bottom: auto;
+    background: red;
+}
+
+.fight-stick .bumpers {
+    top: auto;
+    left: 0;
+    bottom: 0;
+    width: 210px;
+    height: 247px;
+}
+
+.fight-stick .bumper.left {
+    left: 50px;
+    bottom: 70px;
+    background: blue;
+}
+
+.fight-stick .bumper.right {
+    display: none;
+}
+
+.fight-stick .triggers {display: none;}
+
+.fight-stick .b {
+    bottom: 70px;
+    right: 50px;
+    background: blue;
+}
+
+.fight-stick .x {
+    top: calc(50% - 63px);
+    left: calc(50% - 63px);
+    background: yellow;
+}
+
+.fight-stick .button {
+    opacity: 0.5;
+}
