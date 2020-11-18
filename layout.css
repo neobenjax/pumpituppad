@@ -70,6 +70,7 @@
     background: yellow;
 }
 
-.fight-stick .button {
+.fight-stick .button,
+.fight-stick .bumper {
     opacity: 0.5;
 }
