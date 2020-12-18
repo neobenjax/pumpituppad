@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+ol > li {
+  border-bottom: 1px dotted grey;
+  color: white;
+  padding: 5px;
+}
+
+ol > li:nth-child(even) {
+  background: #333;
+}
+
+ol > li:nth-child(odd) {
+  background: #666;
+}
+
+ol > li.current {
+  font-weight: bold;
+  background: #248dec;
+  color: #fce000;
+}
+
+.actions {
+  margin: 10px 0;
+}
+.actions > button {
+    margin: 0 auto;
+    width: 120px;
+    text-transform: uppercase;
+    padding: 10px 10px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: .3s;
+    cursor: pointer;
+    background: #212121;
+    color: white;
+}
+
+.actions > button:hover {
+  background-color: #aaa;
+    color: #000;
+}

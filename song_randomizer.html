@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Song Randomizer</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css.css">
+</head>
+<body>
+  <h1>PIU Songs Randomizer</h1>
+  <h2>Canales</h2>
+  <div class="selectors">
+    <select name="channels" id="channels"></select>
+  </div>
+  <div class="actions">
+    <button id="start">Start</button>
+    <button id="next">Next Song</button>
+    <button id="restart">New Round</button>
+  </div>
+  <h2>Ronda</h2>
+  <ol id="choosenSongs"></ol>
+  <script type="text/javascript">
+    (_ => {
+      const fullSongs = {
+          '1ST - Perfect': [
+            'Ignition Starts',
+            'Hypnosis',
+            'Funky Tonight',
+            'Another Truth',
+            'Final Audition',
+            'Extravaganza',
+            'Mobius Strip',
+            'Repeatorment Remix',
+            'Final Audition 2',
+            'Naissance',
+            'Turkey March',
+            'Midnight Blue',
+            'Dont Bother Me',
+            'We Are',
+            'Solitary',
+            'Mr. Larpus',
+            'Run to you'
+          ],
+          'EXTRA - Prex3': [
+            'Dr. M',
+            'Emperor',
+            'Love is a Danger Zone',
+            'Maria',
+            'My Way',
+            'Point Break',
+            'Winter',
+            'Will-O-The-Wisp',
+            'Till the end of time',
+            'Oy Oy Oy',
+            'Set me up',
+            'Dance with me',
+            'Vook',
+            'Csikos Post',
+            'Bee',
+            'Beat of The War',
+            'Come to Me',
+            'Starian',
+            'Mistake',
+            'Chicken Wing',
+            'Final Audition Ep. 1',
+            'EXTRA BanYa Remix'
+          ],
+          'EXCEED - ZERO': [
+            'Final Audition 3',
+            'Naissance 2',
+            'Monkey Fingers',
+            'Blazing',
+            'Pump me Amadeus',
+            'X Treme',
+            'Get Up!',
+            'Dignity',
+            'What Do You Really Want?',
+            'HOT',
+            'Deja Vu',
+            'Lions roar',
+            'Ill Give You All My Love',
+            'J Bong',
+            'Hi Bi',
+            'Solitary 2',
+            'Canon D',
+            'Tream Vook of the war REMIX',
+            'Banya Classic Remix',
+            'DIGNITY FULL MIX',
+            'BANYA HIPHOP REMIX',
+            'Canon D FULL Song MIX',
+            'Beat of The War 2',
+            'Moonlight',
+            'Witch Doctor',
+            'Love is a Danger Zone pt. 2',
+            'Phantom',
+            'Papa Gonzales',
+            'Chung Hwa Ban Jeom',
+            'Love is a danger zone (try to B.P.M.)',
+            'Love is a Danger Zone pt.2 another'
+          ],
+          'NX - NXA': [
+            'Witch Doctor #1',
+            'Arch of Darkness',
+            'Chimera',
+            'Do U Know That-Old School',
+            'Gun Rock',
+            'Bullfighters Song',
+            'Ugly Dee',
+            'Final Audition Ep. 2-1',
+            'Final Audition Ep. 2-2',
+            'Groove Party',
+            'WI-EX-DOC-VA',
+            'BEMERA',
+            'Love is a Danger Zone 2 Full Song',
+            'Beat of The War 2 Full Song',
+            'Solitary 1.5',
+            'Beat The Ghost',
+            'Caprice of Otada',
+            'Monkey Fingers 2',
+            'Faster Z',
+            'Pumptris Quattro',
+            'Beat # No.4',
+            'Higgledy Piggledy',
+            'Dance All Night',
+            'Dance Vibrations',
+            'Energizer',
+            'Banya-P Guitar Remix',
+            'Blaze Emotion',
+            'Cannon X.1',
+            'Chopsticks Challenge',
+            'Panuelito Rojo',
+            'Procedimientos Para Llegar A Un Com?n Acuerdo',
+            'Digan Lo Que Digan'
+          ],
+          'FIESTA': [
+            'XTREE',
+            'Sorceress Eliese',
+            'U Got 2 Know',
+            'Destination',
+            'Vacuum',
+            'NARCISISTA POR EXCELENCIA',
+            'Xenesis',
+            'Arirang',
+            'Tek -Club Copenhagen-',
+            'Hello William',
+            'Turkey March -Minimal Tunes-',
+            'Get Up (and go)',
+            'Phantom -Intermezzo-',
+            'B.P Classic Remix',
+            'PaPa helloizing',
+            'B.P Classic Remix 2',
+            'Hard Core Rock Mix',
+            'Set Up Me2 Mix',
+            'msgoon RMX pt.6',
+            'Deja Vu',
+            'NARCISISTA POR EXCELENCIA',
+            'Dawn of The Apocalypse',
+            'Final Audition 2',
+            'Final Audition 3',
+            'Final Audition EP. 2-X',
+            'Love is a Danger Zone',
+            'Love is a Danger Zone pt. 2',
+            'Extravaganza',
+            'CHICKEN WING',
+            'Winter',
+            'Solitary 2',
+            'Moonlight'
+          ],
+          'FIESTA EX': [
+            'Cleaner',
+            'Interference',
+            'Reality',
+            'Take Out',
+            'Butterfly',
+            'Overblow',
+            'We Got 2 Know',
+            'Superman',
+            'No.3',
+            'Like A Man',
+            'Crashday',
+            'What Happened',
+            'Gargoyle',
+            'Allegro Con Fuoco',
+            'Hungarian Dance V',
+            'The Devil',
+            'X-Rave',
+            'Native',
+            'Smells Like A Chocolate',
+            'Necromancy',
+            'Vacuum Cleaner',
+            'Everybody Got 2 Know',
+            'Interference',
+            'Like A Man',
+            'No.3',
+            'Crashday',
+            'Trotpris',
+            'Cleaner',
+            'Take Out',
+            'Overblow',
+            'X-Rave',
+            'Pavane'
+          ],
+          'FIESTA 2': ['Monolith','Y2Z','Rockhill','Switchback','Ladybug','Hardkore of the North','Rippin It Up','Tribe Attacker','Virtual Emotion','Take Me Back','RE-RAVE','Heel and Toe','Dream To Nightmare','Rainspark','Utopia','Xuxa','Be Alive (Raaban Inc. Mix)','VVV','Star Command','Pop The Track','Electric','Passacaglia','Baroque Virus','Elise','Ignis Fatuus(DM Ashura Mix)','Love Is A Danger Zone (Cranky Mix)','Hypnosis(SynthWulf Mix)','FFF','Unique','Accident','D','U Got Me Rocking'],
+          'PRIME': ['Nemesis','Katkoi','Latino Virus','Elysium','Yog-Sothoth','Silhouette_Effect','Chinese restaurant','Avalanche','Force of Ra','Requiem','You Got Me Crazy','B2','Meteorize','Mad5cience','Hestia','Amphitryon','Leakage Voltage','Removable Disk0','Super Fantasy','Violet Perfume','Red Swan','Hyacinth','Blaze emotion(Band version)','1950','Sugar Conspiracy Theory','Allegro Piu Mosso','Annihilator Method','Move That Body!','Rock the house','Scorpion King','Point Zero One','red snow']
+      };
+      const channelsSelector = document.querySelector('#channels');
+      const choosenSongsSelector = document.querySelector('#choosenSongs');
+      const startButton = document.querySelector('#start');
+      const nextButton = document.querySelector('#next');
+      const restartButton = document.querySelector('#restart');
+      const shuffleArray = (array) => {
+        for (let i = array.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [array[i], array[j]] = [array[j], array[i]];
+        }
+        return array;
+      };
+      const insertChannels = (channelsList, container) => {
+        container.innerHTML = '';
+        const channelOption = document.createElement('option');
+        channelOption.innerText = 'All channels';
+        channelOption.value = '';
+        container.appendChild(channelOption);
+        channelsList.map(el => {
+          const channelOption = document.createElement('option');
+          channelOption.innerText = el;
+          container.appendChild(channelOption);
+        });
+      };
+      const insertSongs = (list, container) => {
+        container.innerHTML = '';
+        list.map(el => {
+          const songContainer = document.createElement('li');
+          songContainer.innerText = el;
+          container.appendChild(songContainer);
+        });
+      };
+      const getRandomSongsPerRound = (channel, songsPerRound, songsCategories) => {
+        if (channel) {
+          const channelSongs = songsCategories[channel].map( song => `${channel} - ${song}`);
+          return shuffleArray(channelSongs, channel).slice(0, songsPerRound);
+        };
+        const fusedChannels = Object.keys(songsCategories).map(category => fullSongs[category].map(song => `${category} - ${song}`)).flat();
+        return shuffleArray(fusedChannels).slice(0, songsPerRound);
+      };
+
+      insertChannels(Object.keys(fullSongs), channelsSelector);
+
+      const start = channel => {
+        insertSongs(
+          getRandomSongsPerRound(channel, 5, fullSongs),
+          choosenSongsSelector
+        );
+      };
+      // Event handlers
+      changeChannel = vals => {
+        restartRound();
+      };
+      startRound = _ => {
+        const firstSong = document.querySelector('#choosenSongs > li:first-child');
+        firstSong.className = "current";
+      };
+      selectNextSong = _ => {
+        const nextSong = document.querySelector('#choosenSongs > li.current + li');
+        document.querySelector('#choosenSongs > li.current').className = "";
+        nextSong.className = "current";
+      };
+
+      restartRound = _ => {
+        start(channels.value);
+        startRound();
+      };
+      startButton.addEventListener('click',startRound);
+      nextButton.addEventListener('click',selectNextSong);
+      restartButton.addEventListener('click',restartRound);
+      channels.addEventListener('change',changeChannel);
+
+
+      start(channels.value);
+      
+    })(document);
+
+  </script>
+</body>
+</html>
