@@ -46,3 +46,16 @@ ol > li.current {
   background-color: #aaa;
     color: #000;
 }
+
+section {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.randomizer {max-width: 480px;}
+
+.current-song > img {
+    width: 350px;
+    max-height: 300px;
+}
