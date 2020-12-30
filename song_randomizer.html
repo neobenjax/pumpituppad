@@ -20,7 +20,6 @@
         <select name="channels" id="channels"></select>
       </div>
       <div class="actions">
-        <button id="start">Start</button>
         <button id="next">Next Song</button>
         <button id="restart">New Round</button>
       </div>
@@ -40,7 +39,6 @@
       const channelsSelector = document.querySelector('#channels');
       const choosenSongsSelector = document.querySelector('#choosenSongs');
       const currentSongSelector = document.querySelector('#currentSong');
-      const startButton = document.querySelector('#start');
       const nextButton = document.querySelector('#next');
       const restartButton = document.querySelector('#restart');
       const shuffleArray = (array) => {
@@ -89,13 +87,6 @@
         currentSongSelector.src = `..${bannerSrc}`;
       };
 
-      const start = channel => {
-        insertSongs(
-          getRandomSongsPerRound(channel, 5, fullSongs),
-          choosenSongsSelector
-        );
-      };
-      // Event handlers
       changeChannel = vals => {
         restartRound();
       };
@@ -115,7 +106,16 @@
         start(channels.value);
         startRound();
       };
-      startButton.addEventListener('click',startRound);
+
+      const start = channel => {
+        insertSongs(
+          getRandomSongsPerRound(channel, 5, fullSongs),
+          choosenSongsSelector
+        );
+        startRound();
+      };
+      // Event handlers
+     
       nextButton.addEventListener('click',selectNextSong);
       restartButton.addEventListener('click',restartRound);
       channels.addEventListener('change',changeChannel);
