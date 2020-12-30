@@ -9,6 +9,7 @@ ol > li {
   border-bottom: 1px dotted grey;
   color: white;
   padding: 5px;
+  font-size: 14px;
 }
 
 ol > li:nth-child(even) {
@@ -56,6 +57,19 @@ section {
 .randomizer {max-width: 480px;}
 
 .current-song > img {
-    width: 350px;
+    width: 100%;
     max-height: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.current-song {
+    width: 350px;
+    height: 250px;
+    position: relative;
+    overflow: hidden;
+    border: 5px solid black;
+    background: black;
 }
