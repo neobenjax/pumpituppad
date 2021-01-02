@@ -1928,459 +1928,459 @@ const fullSongs = {
   "XX (20th Anniversary Edition)": [
       {
           "name": "Wedding Crashers",
-          "banner": "1.png"
+          "banner": "1601.png"
       },
       {
           "name": "Switronic",
-          "banner": "1.png"
+          "banner": "1602.png"
       },
       {
           "name": "Obliteration",
-          "banner": "1.png"
+          "banner": "1603.png"
       },
       {
           "name": "Transacaglia in G-minor",
-          "banner": "1.png"
+          "banner": "1604.png"
       },
       {
           "name": "1949",
-          "banner": "1.png"
+          "banner": "1605.png"
       },
       {
           "name": "Janus",
-          "banner": "1.png"
+          "banner": "1607.png"
       },
       {
           "name": "I Want U",
-          "banner": "1.png"
+          "banner": "1608.png"
       },
       {
           "name": "District 1",
-          "banner": "1.png"
+          "banner": "1609.png"
       },
       {
           "name": "Nyarlathotep",
-          "banner": "1.png"
+          "banner": "1615.png"
       },
       {
           "name": "Heart Rabbit Coaster",
-          "banner": "1.png"
+          "banner": "1616.png"
       },
       {
           "name": "Lepton Strike",
-          "banner": "1.png"
+          "banner": "1617.png"
       },
       {
           "name": "Skeptic",
-          "banner": "1.png"
+          "banner": "1618.png"
       },
       {
           "name": "Iolite Sky",
-          "banner": "1.png"
+          "banner": "1619.png"
       },
       {
           "name": "%X (Percent X)",
-          "banner": "1.png"
+          "banner": "1620.png"
       },
       {
           "name": "La Cinquantaine",
-          "banner": "1.png"
+          "banner": "1621.png"
       },
       {
           "name": "Le Grand Rouge",
-          "banner": "1.png"
+          "banner": "1622.png"
       },
       {
           "name": "Carmen Bus",
-          "banner": "1.png"
+          "banner": "1623.png"
       },
       {
           "name": "Macaron Day",
-          "banner": "1.png"
+          "banner": "1624.png"
       },
       {
           "name": "Ice of Death",
-          "banner": "1.png"
+          "banner": "1625.png"
       },
       {
           "name": "Poseidon",
-          "banner": "1.png"
+          "banner": "1626.png"
       },
       {
           "name": "Adrenaline Blaster",
-          "banner": "1.png"
+          "banner": "1627.png"
       },
       {
           "name": "Vanish",
-          "banner": "1.png"
+          "banner": "1628.png"
       },
       {
           "name": "Tales of Pumpnia",
-          "banner": "1.png"
+          "banner": "1629.png"
       },
       {
           "name": "Kimchi Fingers",
-          "banner": "1.png"
+          "banner": "1630.png"
       },
       {
           "name": "Orbit Stabilizer",
-          "banner": "1.png"
+          "banner": "1631.png"
       },
       {
           "name": "Destrucimate",
-          "banner": "1.png"
+          "banner": "1632.png"
       },
       {
           "name": "Clematis Rapsodia",
-          "banner": "1.png"
+          "banner": "1633.png"
       },
       {
           "name": "Wicked Legend",
-          "banner": "1.png"
+          "banner": "1634.png"
       },
       {
           "name": "Tantanmen",
-          "banner": "1.png"
+          "banner": "1635.png"
       },
       {
           "name": "Stardream (feat. Romelon)",
-          "banner": "1.png"
+          "banner": "1636.png"
       },
       {
           "name": "Jogging",
-          "banner": "1.png"
+          "banner": "1641.png"
       },
       {
           "name": "The Little Prince (Prod. Godic)",
-          "banner": "1.png"
+          "banner": "1642.png"
       },
       {
           "name": "Full Moon",
-          "banner": "1.png"
+          "banner": "1643.png"
       },
       {
           "name": "Timing",
-          "banner": "1.png"
+          "banner": "1644.png"
       },
       {
           "name": "Fly High",
-          "banner": "1.png"
+          "banner": "1645.png"
       },
       {
           "name": "Black Cat",
-          "banner": "1.png"
+          "banner": "1646.png"
       },
       {
           "name": "Hann (Alone)",
-          "banner": "1.png"
+          "banner": "1647.png"
       },
       {
           "name": "Snapping",
-          "banner": "1.png"
+          "banner": "1648.png"
       },
       {
           "name": "Nekkoya (Pick Me)",
-          "banner": "1.png"
+          "banner": "1649.png"
       },
       {
           "name": "Im So Sick",
-          "banner": "1.png"
+          "banner": "1650.png"
       },
       {
           "name": "Boomerang",
-          "banner": "1.png"
+          "banner": "1651.png"
       },
       {
           "name": "Gashina",
-          "banner": "1.png"
+          "banner": "1652.png"
       },
       {
           "name": "Adios",
-          "banner": "1.png"
+          "banner": "1653.png"
       },
       {
           "name": "HIT",
-          "banner": "1.png"
+          "banner": "1654.png"
       },
       {
           "name": "Bboom Bboom",
-          "banner": "1.png"
+          "banner": "1655.png"
       },
       {
           "name": "Rooftop",
-          "banner": "1.png"
+          "banner": "1656.png"
       },
       {
           "name": "Bungee (Fall in Love)",
-          "banner": "1.png"
+          "banner": "1657.png"
       },
       {
           "name": "Starry Night",
-          "banner": "1.png"
+          "banner": "1658.png"
       },
       {
           "name": "Love Scenario",
-          "banner": "1.png"
+          "banner": "1659.png"
       },
       {
           "name": "Time For The Moon Night",
-          "banner": "1.png"
+          "banner": "1660.png"
       },
       {
           "name": "Bon Bon Chocolat",
-          "banner": "1.png"
+          "banner": "1661.png"
       },
       {
           "name": "Very Nice",
-          "banner": "1.png"
+          "banner": "1662.png"
       },
       {
           "name": "Good Bye",
-          "banner": "1.png"
+          "banner": "1663.png"
       },
       {
           "name": "You And I",
-          "banner": "1.png"
+          "banner": "1664.png"
       },
       {
           "name": "King of Sales",
-          "banner": "1.png"
+          "banner": "1665.png"
       },
       {
           "name": "Gotta Go",
-          "banner": "1.png"
+          "banner": "1666.png"
       },
       {
           "name": "Boong Boong (Feat. Sik-K) (Prod. GroovyRoom)",
-          "banner": "1.png"
+          "banner": "1667.png"
       },
       {
           "name": "Club Night",
-          "banner": "1.png"
+          "banner": "1668.png"
       },
       {
           "name": "Indestructible",
-          "banner": "1.png"
+          "banner": "1669.png"
       },
       {
           "name": "86[nb 6]",
-          "banner": "1.png"
+          "banner": "1670.png"
       },
       {
           "name": "Cross Soul",
-          "banner": "1.png"
+          "banner": "1671.png"
       },
       {
           "name": "Broken Karma (PIU Edit)",
-          "banner": "1.png"
+          "banner": "1672.png"
       },
       {
           "name": "After a Thousand Years",
-          "banner": "1.png"
+          "banner": "1673.png"
       },
       {
           "name": "Lala",
-          "banner": "1.png"
+          "banner": "1674.png"
       },
       {
           "name": "F(R)IEND",
-          "banner": "1.png"
+          "banner": "1675.png"
       },
       {
           "name": "Conflict",
-          "banner": "1.png"
+          "banner": "1676.png"
       },
       {
           "name": "Danger & Danger",
-          "banner": "1.png"
+          "banner": "1677.png"
       },
       {
           "name": "Imagination",
-          "banner": "1.png"
+          "banner": "1678.png"
       },
       {
           "name": "Black Swan",
-          "banner": "1.png"
+          "banner": "1679.png"
       },
       {
           "name": "Obelisque",
-          "banner": "1.png"
+          "banner": "1680.png"
       },
       {
           "name": "Rage of Fire",
-          "banner": "1.png"
+          "banner": "1681.png"
       },
       {
           "name": "Dual Racing <Red vs Blue>",
-          "banner": "1.png"
+          "banner": "1682.png"
       },
       {
           "name": "Cycling!",
-          "banner": "1.png"
+          "banner": "1683.png"
       },
       {
           "name": "Uranium",
-          "banner": "1.png"
+          "banner": "1684.png"
       },
       {
           "name": "Xeroize",
-          "banner": "1.png"
+          "banner": "1685.png"
       },
       {
           "name": "Rising Star",
-          "banner": "1.png"
+          "banner": "1686.png"
       },
       {
           "name": "Cutie Song",
-          "banner": "1.png"
+          "banner": "1687.png"
       },
       {
           "name": "Headless Chicken",
-          "banner": "1.png"
+          "banner": "1688.png"
       },
       {
           "name": "Over The Horizon",
-          "banner": "1.png"
+          "banner": "1689.png"
       },
       {
           "name": "Loki",
-          "banner": "1.png"
+          "banner": "1690.png"
       },
       {
           "name": "Dement ~After Legend~",
-          "banner": "1.png"
+          "banner": "1691.png"
       },
       {
           "name": "Houseplan",
-          "banner": "1.png"
+          "banner": "1692.png"
       },
       {
           "name": "Your Mind",
-          "banner": "1.png"
+          "banner": "1693.png"
       },
       {
           "name": "Nihilism -Another Ver.-",
-          "banner": "1.png"
+          "banner": "1694.png"
       },
       {
           "name": "Phalanx RS2018 edit",
-          "banner": "1.png"
+          "banner": "1695.png"
       },
       {
           "name": "Point Zero 2",
-          "banner": "1.png"
+          "banner": "1696.png"
       },
       {
           "name": "Can-Can ~Orpheus in the Party Mix~",
-          "banner": "1.png"
+          "banner": "16A0.png"
       },
       {
           "name": "Papasito (feat. KuTiNA)",
-          "banner": "1.png"
+          "banner": "16A1.png"
       },
       {
           "name": "Fires of Destiny",
-          "banner": "1.png"
+          "banner": "16A2.png"
       },
       {
           "name": "The End of the World ft. Skizzo",
-          "banner": "1.png"
+          "banner": "16A3.png"
       },
       {
           "name": "Forgotten Vampire",
-          "banner": "1.png"
+          "banner": "16A4.png"
       },
       {
           "name": "Allegro Con Fuoco (Full Song)",
-          "banner": "1.png"
+          "banner": "16C5.png"
       },
       {
           "name": "Desaparecer",
-          "banner": "1.png"
+          "banner": "16D0.png"
       },
       {
           "name": "Errorcode: 0",
-          "banner": "1.png"
+          "banner": "16D1.png"
       },
       {
           "name": "Meteo5cience (GADGET mix)[nb 8]",
-          "banner": "1.png"
+          "banner": "16D3.png"
       },
       {
           "name": "Prime Time",
-          "banner": "1.png"
+          "banner": "16D4.png"
       },
       {
           "name": "Fire Noodle Challenge",
-          "banner": "1.png"
+          "banner": "16D5.png"
       },
       {
           "name": "Hann (Alone) (Full Song)",
-          "banner": "1.png"
+          "banner": "16D8.png"
       },
       {
           "name": "Nekkoya (Pick Me) (Full Song)",
-          "banner": "1.png"
+          "banner": "16D9.png"
       },
       {
           "name": "Bboom Bboom (Full Song)",
-          "banner": "1.png"
+          "banner": "16E0.png"
       },
       {
           "name": "Im So Sick (Full Song)",
-          "banner": "1.png"
+          "banner": "16E1.png"
       },
       {
           "name": "Gashina (Full Song)",
-          "banner": "1.png"
+          "banner": "16E3.png"
       },
       {
           "name": "Starry Night (Full Song)",
-          "banner": "1.png"
+          "banner": "16E4.png"
       },
       {
           "name": "Time For The Moon Night (Full Song)",
-          "banner": "1.png"
+          "banner": "16E5.png"
       },
       {
           "name": "Very Nice (Full Song)",
-          "banner": "1.png"
+          "banner": "16E7.png"
       },
       {
           "name": "Good Bye (Full Song)",
-          "banner": "1.png"
+          "banner": "16E8.png"
       },
       {
           "name": "Nyarlathotep (Shortcut)",
-          "banner": "1.png"
+          "banner": "16F0.png"
       },
       {
           "name": "Wedding Crashers (Shortcut)",
-          "banner": "1.png"
+          "banner": "16F1.png"
       },
       {
           "name": "Can-Can ~Orpheus in the Party Mix~ (Shortcut)",
-          "banner": "1.png"
+          "banner": "16F2.png"
       },
       {
           "name": "XX Opening",
-          "banner": "1.png"
+          "banner": "16F3.png"
       },
       {
           "name": "I Want U (Shortcut)",
-          "banner": "1.png"
+          "banner": "16F4.png"
       },
       {
           "name": "Poseidon (Shortcut)",
-          "banner": "1.png"
+          "banner": "16F5.png"
       },
       {
           "name": "Switronic (Shortcut)",
-          "banner": "1.png"
+          "banner": "16F6.png"
       },
       {
           "name": "86 (Full Song)",
-          "banner": "1.png"
+          "banner": "16F7.png"
       },
       {
           "name": "Harmagedon",
