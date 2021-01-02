@@ -10,23 +10,30 @@
    <script src="./original_songs.js"></script>
 </head>
 <body>
-  <h1>PIU Songs Randomizer</h1>
-  <h2>Canales</h2>
-  <div class="selectors">
-    <select name="channels" id="channels"></select>
-  </div>
-  <div class="actions">
-    <button id="start">Start</button>
-    <button id="next">Next Song</button>
-    <button id="restart">New Round</button>
-  </div>
-  <h2>Ronda</h2>
-  <ol id="choosenSongs"></ol>
+  <section>
+    <div class="randomizer">
+      <h1>PIU Songs Randomizer</h1>
+      <h2>Canales</h2>
+      <div class="selectors">
+        <select name="channels" id="channels"></select>
+      </div>
+      <div class="actions">
+        <button id="next">Next Song</button>
+        <button id="restart">New Round</button>
+      </div>
+      <h2>Ronda</h2>
+      <ol id="choosenSongs"></ol>
+    </div>
+    <div class="current-song">
+      <img src="" alt="" id="currentSong">
+    </div>
+  </section>
   <script type="text/javascript">
     (_ => {
+      const bannersRoutePath = 'https://raw.githubusercontent.com/neobenjax/pumpituppad/main/pump_banners/';
       const channelsSelector = document.querySelector('#channels');
       const choosenSongsSelector = document.querySelector('#choosenSongs');
-      const startButton = document.querySelector('#start');
+      const currentSongSelector = document.querySelector('#currentSong');
       const nextButton = document.querySelector('#next');
       const restartButton = document.querySelector('#restart');
       const shuffleArray = (array) => {
@@ -52,26 +59,34 @@
         container.innerHTML = '';
         list.map(el => {
           const songContainer = document.createElement('li');
-          songContainer.innerText = el;
+          songContainer.innerText = el.title;
+          songContainer.title = el.bannerSrc;
           container.appendChild(songContainer);
         });
       };
       const getRandomSongsPerRound = (channel, songsPerRound, songsCategories) => {
         if (channel) {
-          const channelSongs = songsCategories[channel].map( song => `${channel} - ${song}`);
+          const channelSongs = songsCategories[channel].map( song => ({title :`${channel} - ${song.name}`, bannerSrc: `${channel}|${song.banner}`}));
           return shuffleArray(channelSongs, channel).slice(0, songsPerRound);
         };
-        const fusedChannels = Object.keys(songsCategories).map(category => fullSongs[category].map(song => `${category} - ${song}`)).flat();
+        const fusedChannels = Object.keys(songsCategories).map(category => fullSongs[category].map(song => ({title :`${category} - ${song.name}`, bannerSrc: `${category}|${song.banner}`}))).flat();
         return shuffleArray(fusedChannels).slice(0, songsPerRound);
       };
 
       insertChannels(Object.keys(fullSongs), channelsSelector);
+
+      const updateCurrentSongBanner = bannerData =>{
+        const [folder, bannerImg] = bannerData.split('|');
+        const bannerPathSrc = `${bannersRoutePath}${folder}/${bannerImg}`;
+        currentSongSelector.src = `${bannerPathSrc}`;
+      };
 
       const start = channel => {
         insertSongs(
           getRandomSongsPerRound(channel, 5, fullSongs),
           choosenSongsSelector
         );
+        startRound();
       };
       // Event handlers
       changeChannel = vals => {
@@ -80,18 +95,19 @@
       startRound = _ => {
         const firstSong = document.querySelector('#choosenSongs > li:first-child');
         firstSong.className = "current";
+        updateCurrentSongBanner(firstSong.title);
       };
       selectNextSong = _ => {
         const nextSong = document.querySelector('#choosenSongs > li.current + li');
         document.querySelector('#choosenSongs > li.current').className = "";
         nextSong.className = "current";
+        updateCurrentSongBanner(nextSong.title);
       };
 
       restartRound = _ => {
         start(channels.value);
         startRound();
       };
-      startButton.addEventListener('click',startRound);
       nextButton.addEventListener('click',selectNextSong);
       restartButton.addEventListener('click',restartRound);
       channels.addEventListener('change',changeChannel);

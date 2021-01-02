@@ -9,6 +9,7 @@ ol > li {
   border-bottom: 1px dotted grey;
   color: white;
   padding: 5px;
+  font-size: 14px;
 }
 
 ol > li:nth-child(even) {
@@ -45,4 +46,38 @@ ol > li.current {
 .actions > button:hover {
   background-color: #aaa;
     color: #000;
+}
+
+section {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.randomizer {max-width: 480px;}
+
+.current-song > img {
+    width: 100%;
+    max-height: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.current-song > img:before {
+    content: ' ';
+    display: block;
+    height: 250px;
+    width: 350px;
+    background-image: url(fallback.png);
+    background-position: 0;
+}
+.current-song {
+    width: 350px;
+    height: 250px;
+    position: relative;
+    overflow: hidden;
+    border: 5px solid black;
+    background: black;
 }
