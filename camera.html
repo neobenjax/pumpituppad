@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sitio externo</title>
+</head>
+<body>
+  Sitio en una URL externa
+  <button onclick="_requestCameraPermissions()">Request Cammera permissions Permissions Host Site</button>
+  <div id="result"></div>
+  <script>
+    function _requestCameraPermissions() {
+      console.log('REQUEST');
+      const resultSelector = document.getElementById('result');
+      if ('mediaDevices' in navigator && 'getUserMedia' in navigator.mediaDevices) {
+        console.log('Lets get this party started');
+        navigator.mediaDevices.getUserMedia({video: true}).then(e => {
+          console.log('Success:', e);
+          resultSelector.innerText = 'Permissions Granted succesfully';
+        }).catch(error => {
+          console.log('Error:', error);
+          resultSelector.innerText = 'Permissions Denied';
+        });
+      }
+    }
+  </script>
+</body>
+</html>
